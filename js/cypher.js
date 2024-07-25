@@ -11,14 +11,6 @@ const vowels = Object.freeze({
     u: "ufat"
 });
 
-const keys = Object.freeze({
-    "enter": "e",
-    "imes": "i",
-    "ai": "a",
-    "ober": "o",
-    "ufat": "u"
-});
-
 showMessage();
 btn_encrypt.addEventListener("click", encryptPhrase);
 btn_decrypt.addEventListener("click", decryptPhrase);
