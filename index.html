@@ -20,17 +20,13 @@
 
             <section class="options-container">
                 <p>&#8505; Letras sin acentos</p>
-                <input type="button" class="btn-1" value="Encriptar">
-                <input type="button" class="btn-2" value="Desencriptar">
+                <input type="button" id="btn-encrypt" class="btn-1" value="Encriptar">
+                <input type="button" id="btn-decrypt" class="btn-2" value="Desencriptar">
             </section>
         </section>
-        <aside class="output-container">
-            <textarea name="output-text" id="output-text" class="output"></textarea>
-            <button type="button" class="output">&#128203;</button>
-            <img src="img/imagefortext.svg" alt="" class="output-info">
-            <p class="title-text output-info">Ningún mensaje fue encontrado</p>
-            <p class="info-text output-info">Ingresa el texto que deseas encriptar o desencriptar.</p>
-        </aside>
+        <aside class="output-container"></aside>
     </main>
+
+    <script src="js/cypher.js"></script>
 </body>
 </html>

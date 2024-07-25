@@ -44,7 +44,7 @@ body{
     height: 95vh;
     padding: 32px;
 
-    flex-basis: 80%;
+    flex-basis: 75%;
     flex-grow: 1;
     flex-shrink: 1;
 
@@ -103,7 +103,7 @@ body{
     height: 95vh;
     padding: 32px;
 
-    flex-basis: 20%;
+    flex-basis: 25%;
     flex-grow: 1;
     flex-shrink: 1;
     background-color: var(--white);
@@ -116,14 +116,14 @@ body{
     gap: 16px;
 }
 
-.output-container > textarea {
+.output-container > p {
     width: 100%;
     height: 100%;
     font-size: 30px;
     padding: 20px 25px;
     border-radius: 16px;
+    border: 1px solid var(--dark-blue-300);
     color: var(--dark-blue-300);
-    resize: none;
 }
 
 .output-container > button {
@@ -134,15 +134,8 @@ body{
     border-radius: 8px;
     border: 1px solid var(--gray-blue-300);
     cursor: pointer;
-    right: 3rem;
-}
-
-.output-container > textarea:focus{
-    outline: none;
-}
-
-.output{
-    display: none;
+    right: 3.5rem;
+    top: 3.5rem;
 }
 
 .title-text{
@@ -159,6 +152,7 @@ body{
 }
 
 @media only screen and (min-width: 768px) {
+
     .options-container{
         display: flex;
         flex-wrap: wrap;
