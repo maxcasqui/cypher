@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Cypher</title>
 </head>
 <body>
     <main class="main-container">
-        <nav class="navigation">
-            <img src="img/logo.svg" alt="">
-        </nav>
         <section class="input-container">
-            <input type="text" name="input-text" id="input-text">
+            <nav class="navigation">
+                <img src="img/logo.svg" alt="">
+            </nav>
+
+            <textarea
+            name="input-text" id="input-text"
+            placeholder="Ingresa el texto aquí"
+            ></textarea>
+
+            <section class="options-container">
+                <p>&#8505; Letras sin acentos</p>
+                <input type="button" class="btn-1" value="Encriptar">
+                <input type="button" class="btn-2" value="Desencriptar">
+            </section>
         </section>
-        <section class="options-container">
-            <p>&#8505; Letras sin acentos</p>
-            <buttton>Encriptar</buttton>
-            <buttton>Desencriptar</buttton>
-        </section>
+        <aside class="output-container">
+            <textarea name="output-text" id="output-text" class="output"></textarea>
+            <button type="button" class="output">&#128203;</button>
+            <img src="img/imagefortext.svg" alt="" class="output-info">
+            <p class="title-text output-info">Ningún mensaje fue encontrado</p>
+            <p class="info-text output-info">Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </aside>
     </main>
-    <aside class="output-container">
-        <input type="text" name="output-text" id="output-text">
-        <img src="img/imagefortext.svg" alt="">
-        <p class="title-text">Ningún mensaje fue encontrado</p>
-        <p class="info-text">Ingresa el texto que deseas encriptar o desencriptar.</p>
-    </aside>
 </body>
 </html>
